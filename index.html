@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Networking Strategy - WAFS & BTE</title>
+<style>
+body {font-family: Arial; background:#f4f6f9; margin:0;}
+.container {max-width:1100px;margin:auto;padding:20px;}
+.tabs {display:flex;margin-bottom:20px;}
+.tab {padding:12px 20px;background:#ddd;cursor:pointer;margin-right:5px;border-radius:6px 6px 0 0;}
+.tab.active {background:#1F3A5F;color:white;}
+.content {display:none;}
+.content.active {display:block;}
+.card {background:white;padding:20px;margin-bottom:15px;border-radius:10px;box-shadow:0 3px 8px rgba(0,0,0,0.08);}
+.title {font-size:18px;font-weight:bold;margin-bottom:5px;}
+.meta {font-size:13px;color:#555;margin-bottom:10px;}
+.desc {margin-bottom:10px;}
+a {color:#1F3A5F;text-decoration:none;font-weight:bold;}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="tabs">
+<div class="tab active" onclick="showTab('wafs')">WAFS</div>
+<div class="tab" onclick="showTab('bte')">BTE</div>
+</div>
+
+<div id="wafs" class="content active">
+
+<div class="card">
+<div class="title">Small Business Committee Meeting</div>
+<div class="meta">May 15, 2026 | Free/Low</div>
+<div class="desc">Direct access to small business owners actively running companies. High conversion potential for tax and accounting services.</div>
+<a href="https://business.comochamber.com/events/details/small-business-committee-meeting-05-15-2026-12311" target="_blank">Open Event</a>
+</div>
+
+<div class="card">
+<div class="title">Small Business of the Year Awards</div>
+<div class="meta">2026 | Paid</div>
+<div class="desc">Access to top-performing local businesses. Ideal for higher-value clients and credibility positioning.</div>
+<a href="https://business.comochamber.com/events/details/small-business-of-the-year-awards-2026-12111" target="_blank">Open Event</a>
+</div>
+
+<div class="card">
+<div class="title">Women’s Network – Marketing & Communications</div>
+<div class="meta">May 11, 2026 | Free/Low</div>
+<div class="desc">Networking with decision-makers and professionals. Good for referrals and relationship building.</div>
+<a href="https://business.comochamber.com/events/details/women-s-network-marketing-communications-committee-meeting-05-11-2026-10302" target="_blank">Open Event</a>
+</div>
+
+<div class="card">
+<div class="title">Women’s Network Leadership Meeting</div>
+<div class="meta">Recurring | Free/Low</div>
+<div class="desc">Access to leadership-level professionals. Strong long-term networking opportunity.</div>
+<a href="https://business.comochamber.com/events/details/women-s-network-leadership-meeting-12355" target="_blank">Open Event</a>
+</div>
+
+<div class="card">
+<div class="title">1 Million Cups</div>
+<div class="meta">Weekly | Free</div>
+<div class="desc">Entrepreneurs presenting businesses. Good for early-stage clients and consistent pipeline.</div>
+<a href="https://www.mosourcelink.com/event/1-million-cups-85/" target="_blank">Open Event</a>
+</div>
+
+<div class="card">
+<div class="title">Business After Hours – Springfield</div>
+<div class="meta">May 2026 | Low</div>
+<div class="desc">Strong networking event with business owners. Good for volume lead generation.</div>
+<a href="https://business.springfieldchamber.com/event-calendar/Details/may-2026-business-after-hours-1446081?sourceTypeId=Website" target="_blank">Open Event</a>
+</div>
+
+<div class="card">
+<div class="title">Good Morning Springfield</div>
+<div class="meta">May 2026 | Paid</div>
+<div class="desc">Large event with 200+ attendees. One of the best for quick lead generation.</div>
+<a href="https://business.springfieldchamber.com/event-calendar/Details/good-morning-springfield-may-2026-1442166?sourceTypeId=Website" target="_blank">Open Event</a>
+</div>
+
+</div>
+
+<div id="bte" class="content">
+
+<div class="card">
+<div class="title">Business for the Better Conference</div>
+<div class="meta">2026 | Paid</div>
+<div class="desc">High-level conference with decision makers. Ideal for strategic advisory positioning.</div>
+<a href="https://www.eventbrite.com/e/business-for-the-better-conference-2026-tickets-1986487285947" target="_blank">Open Event</a>
+</div>
+
+<div class="card">
+<div class="title">AI Business Breakfast</div>
+<div class="meta">2026 | Paid</div>
+<div class="desc">Forward-thinking business audience. Strong for high-ticket advisory conversations.</div>
+<a href="https://www.eventbrite.com/e/ai-business-breakfast-tickets-1987319418879" target="_blank">Open Event</a>
+</div>
+
+<div class="card">
+<div class="title">General Business Networking</div>
+<div class="meta">2026 | Low</div>
+<div class="desc">Mixed professionals and business owners. Good for pipeline building.</div>
+<a href="https://www.eventbrite.com/e/general-business-networking-elevating-your-potential-saint-louis-tickets-1984316750818" target="_blank">Open Event</a>
+</div>
+
+<div class="card">
+<div class="title">St. Louis Business Networking Event</div>
+<div class="meta">2026 | Low</div>
+<div class="desc">Consistent networking event with solid attendance. Good for partnerships and leads.</div>
+<a href="https://www.eventbrite.com/e/st-louis-business-networking-event-registration-1986266249822" target="_blank">Open Event</a>
+</div>
+
+</div>
+
+</div>
+
+<script>
+function showTab(tab){
+document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+document.querySelectorAll('.content').forEach(c=>c.classList.remove('active'));
+document.querySelector('[onclick="showTab(\''+tab+'\')"]').classList.add('active');
+document.getElementById(tab).classList.add('active');
+}
+</script>
+
+</body>
+</html>
